@@ -20,24 +20,40 @@ header{
     align-content: flex-end;
     justify-content:flex-end;
 }
+.right{
+    display:flex;
+    align-content: center;
+    justify-content:center;
+    float: right;
+    position: absolute;
+    right: 20px;
+}
 .right>img{
+    margin-left: 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    color: gray;
+}
+#dots{
+    margin-top:3px;
+    margin-right: 5px;
+}
+.right>img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .nav-bar{
     height: 100%;
     display: flex;
-    width: 250px;
+    width: 200px;
     padding-left: 32px;
-    padding-right: 4px;
+    padding-right: 32px;
     align-items: center;
 }
-.nav-bar>div{
-    height: 100%;
-    width: 50%;
+.gmail-image{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -48,6 +64,9 @@ header{
     padding-left: 15px;
     line-height: 24px;
     font-size: 13px;
+}
+.nav-a:hover{
+    text-decoration: underline;
 }
 .google-container{
     height: 40vh;
@@ -138,4 +157,22 @@ i{
 .voice{
    margin-right: 10px;
    margin-top: -5px;
+   margin-left: 10px;
+}
+.remove{
+    margin-top: -5px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+.remove>i{
+    height: 100%;
+    margin-right: 12px;
+}
+span{
+    border: 1px solid rgb(218, 220, 224);
+    height: 28.5938px;
+   
 }

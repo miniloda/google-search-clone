@@ -37,6 +37,9 @@ header{
     -o-border-radius: 50%;
     color: gray;
 }
+#profile{
+    margin-top: 3px;
+}
 #dots{
     margin-top:3px;
     margin-right: 5px;
@@ -220,4 +223,11 @@ span{
 }
 .lucky-search-button:active, .google-search-button:active{
     border: 1px solid rgb(51, 105, 223);
+}
+
+@media only screen and (max-width: 500px) {
+    .search-bar{
+        width: 70%;
+        
+    }
 }
